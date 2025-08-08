@@ -8,8 +8,8 @@
   </head>
   <body>
     <main>
-      <h1>Calorie Counter</h1>
       <div class="container">
+        <h1>Calorie Counter</h1>
         <form id="calorie-counter">
           <label for="budget">Budget</label>
           <input
@@ -19,6 +19,19 @@
             placeholder="Daily calorie budget"
             required
           />
+          <div class="controls">
+            <span>
+              <label for="entry-dropdown">Add food or exercise:</label>
+              <select id="entry-dropdown" name="options">
+                <option value="breakfast" selected>Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snacks">Snacks</option>
+                <option value="exercise">Exercise</option>
+              </select>
+              <button type="button" id="add-entry">Add Entry</button>
+            </span>
+          </div>
           <fieldset id="breakfast">
             <legend>Breakfast</legend>
             <div class="input-container"></div>
@@ -39,19 +52,7 @@
             <legend>Exercise</legend>
             <div class="input-container"></div>
           </fieldset>
-          <div class="controls">
-            <span>
-              <label for="entry-dropdown">Add food or exercise:</label>
-              <select id="entry-dropdown" name="options">
-                <option value="breakfast" selected>Breakfast</option>
-                <option value="lunch">Lunch</option>
-                <option value="dinner">Dinner</option>
-                <option value="snacks">Snacks</option>
-                <option value="exercise">Exercise</option>
-              </select>
-              <button type="button" id="add-entry">Add Entry</button>
-            </span>
-          </div>
+          
           <div>
             <button type="submit">
               Calculate Remaining Calories

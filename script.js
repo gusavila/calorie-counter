@@ -23,15 +23,17 @@ function addEntry() {
   const entryNumber =
     targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
   const HTMLString = `
-  <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+  <div class="items-container">
+  <label for="${entryDropdown.value}-${entryNumber}-name">Name</label>
   <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
-  <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+  <label for="${entryDropdown.value}-${entryNumber}-calories"> Calories</label>
   <input
     type="number"
     min="0"
     id="${entryDropdown.value}-${entryNumber}-calories"
     placeholder="Calories"
-  />`;
+  />
+  <div/>`;
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
@@ -102,6 +104,7 @@ function getCaloriesFromInputs(list) {
 }
 
 function clearForm() {
+  console.log("funcionou");
   const inputContainers = Array.from(
     document.querySelectorAll(".input-container")
   );
@@ -117,4 +120,4 @@ function clearForm() {
 
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
-clearButton.addEventListener(clearForm);
+clearButton.addEventListener("click", clearForm);

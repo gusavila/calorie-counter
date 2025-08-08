@@ -4,7 +4,11 @@ his is a simple calorie counter web application built as part of the [freeCodeCa
 
 The project focuses on **form validation** using vanilla JavaScript, demonstrating how to handle user input, perform real-time validation, and display feedback.
 
-## 📸 Preview
+## 📸 New Version Preview
+
+![New Calorie Counter Preview](./new-calorie-counter-preview.webp)
+
+## 📸 Old Version Preview
 
 ![Calorie Counter Preview](./calorie-counter-preview.webp)
 
