@@ -26,13 +26,6 @@ The project focuses on **form validation** using vanilla JavaScript, demonstrati
 - Using regular expressions for input checks
 - Improving user experience with helpful validation messages
 
-## 🚀 Getting Started
-
-1. Clone or download this repository.
-2. Open `index.html` in a browser.
-3. Press any of the supported keys or click on the buttons.
-4. Hear the drums and enjoy the animations!
-
 ## 💻 Technologies Used
 
 - HTML5
